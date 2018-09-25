@@ -1,0 +1,1 @@
+# Exercicios feitos apenas para aprendizado

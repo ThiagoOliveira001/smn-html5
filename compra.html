@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="produtos do mercado">
+    <meta name="author" content="Thiago Oliveira">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/cep.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Informações de pagamento</legend>
+            <input type="text" name="nome" placeholder="Nome" required autofocus>
+            <input type="email" name="email" placeholder="Email" required>
+            <fieldset>
+                <legend>Cartão</legend>
+                <input type="radio" id="visa" name="cartao" value="visa">
+                <label for="visa">
+                    <img src="img/visa-card.png" alt="Visa" width="30">
+                </label><br>
+                <input type="radio" id="master" name="cartao" value="master">
+                <label for="master">
+                    <img src="img/master-card.jpg" alt="Visa" width="30">
+                </label><br>
+                <input type="radio" id="hiper" name="cartao" value="hiper">
+                <label for="hiper">
+                    <img src="img/hiper-card.png" alt="Visa" width="30">
+                </label><br>
+                <input type="text" name="numeroCartao" placeholder="Numero" required><br>
+                <input type="text" name="codigoSeguranca"  placeholder="Codigo" required><br>
+                <input type="password" name="senhaCartao" placeholder="Senha" required><br>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Informações de entrega</legend>
+            <input type="text" id="cep" name="cep" placeholder="Cep" onkeyup="buscaCep()"><br>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Logradouro"><br>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro"><br>
+            <input type="text" id="municipio" name="municipio" placeholder="Municipio"><br>
+            <input type="text" id="estado" name="estado" placeholder="Estado"><br>
+            <input type="text" name="Numero" placeholder="Numero"><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>

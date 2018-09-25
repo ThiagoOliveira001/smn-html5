@@ -1,0 +1,53 @@
+.produtos form{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-row-gap: 10px;
+}
+.produtos .produto img {
+    width: 200px;
+    height: 100px;
+}
+
+.navbar {
+    background:rgb(221, 217, 217);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    border-bottom: solid 2px blue;
+}
+
+.produtos .produto .money {
+    color: rgb(29, 201, 29);
+}
+
+.produtos .produto .icone-compra {
+    color: rgb(8, 247, 8);
+}
+
+.produtos .produto button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.produtos .produto button:hover {
+    background-color: rgb(241, 238, 238);
+}
+
+.produtos .produto {
+    border: solid 1px gray;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    border-radius: 3%;
+    border-bottom: 10px; 
+}
+
+.produtos .produto input {
+    width: 100px;
+}
