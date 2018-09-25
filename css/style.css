@@ -9,16 +9,19 @@
 }
 
 .navbar {
-    background:rgb(221, 217, 217);
+    background: black;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: white;
+    margin-left: 10px;  
 }
 
 .navbar a:hover {
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px red;
 }
 
 .produtos .produto .money {

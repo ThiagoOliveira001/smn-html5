@@ -7,10 +7,18 @@ function buscaCep() {
     fetch(url).then((res) => {
         res.json().then(endereco => {
             console.log(endereco);
-            $("logradouro").value = endereco.logradouro;
-            $("bairro").value = endereco.bairro;
-            $("municipio").value = endereco.municipio;
-            $("estado").value = endereco.uf;
+            if (endereco.logradouro != undefined) {
+                $("logradouro").value = endereco.logradouro;
+            }
+            if (endereco.bairro != undefined) {
+                $("bairro").value = endereco.bairro;
+            }
+            if (endereco.localidade != undefined) {
+                $("municipio").value = endereco.localidade;
+            }
+            if (endereco.uf != undefined) {
+                $("estado").value = endereco.uf;
+            }
         });
     }).catch(error => {
         console.log(error);
